@@ -4,9 +4,9 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber');
 
 gulp.task('browserify', function() {
-    gulp.src('src/js/main.jsx')
+    gulp.src('src/js/main.js')
       .pipe(plumber())
       .pipe(browserify({transform: 'reactify'}))
-      .pipe(concat('main.jsx'))
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('dist/js'));
 });
