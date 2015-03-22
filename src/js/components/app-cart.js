@@ -2,7 +2,7 @@ var React = require('react'),
     AppStore = require('../stores/app-store.js'),
     RemoveFromCart = require('../components/app-removefromcart.js'),
     Increase = require('../components/app-increase.js'),
-    decrease = require('../components/app-decrease.js');
+    Decrease = require('../components/app-decrease.js');
 
 
 function cartItems(){
@@ -10,7 +10,7 @@ function cartItems(){
 }
 
 var Cart = React.createClass({
-  geInitialState: function(){
+  getInitialState: function(){
     return cartItems();
   },
   componentWillMount: function(){
@@ -20,11 +20,12 @@ var Cart = React.createClass({
     this.setState(cartItems())
   },
   render: function(){
+    var total=0;
     var items = this.state.items.map(function(item, i){
       var subtotal = item.cost*item.qty;
       total += subtotal;
       return (
-        <tr key={i}>
+        <tr key={i} >
           <td><RemoveFromCart index={i} /></td>
           <td>{item.title}</td>
           <td>{item.qty}</td>

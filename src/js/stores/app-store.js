@@ -1,17 +1,17 @@
-var AppDispatcher = require('../dispatcher/app-dispatcher');
+var AppDispatcher = require('../dispatchers/dispatcher.js');
+var EventEmitter = require ('events').EventEmitter;
+var assign = require('object-assign');
 var AppConstants = require('../constants/app-constants');
-var merge = require('react/lib/marge');
-var EventEmitter = require('events').EventEmitter;
 
 var CHANGE_EVENT = "change";
 
 var _catalog = [
-  {id: 1, title: 'MacBook', cost: 1199},
-  {id: 2, title: 'MacBook Pro' cost: 1399},
-  {id: 3, title: 'iMac', cost: 1799}
+  {id: 1, title: 'MacBook', cost: 1199 },
+  {id: 2, title: 'MacBook Pro', cost: 1399 },
+  {id: 3, title: 'iMac', cost: 1799 }
 ];
 
-var _cartitens = [];
+var _cartItems = [];
 
 function _removeItem(index){
   _cartItems[index].inCart = false;
@@ -46,23 +46,22 @@ function _addItem(item){
   }
 }
 
-var AppStore = merge(EventEmitter.prototype, {
-  emitChange: function(){
+var AppStore = assign({}, EventEmitter.prototype, {
+
+  emitChange: function() {
     this.emit(CHANGE_EVENT)
   },
-
   addChangeListener: function(callback){
     this.on(CHANGE_EVENT, callback)
-  }
-
+  },
   removeChangeListener: function(callback){
     this.removeListener(CHANGE_EVENT, callback)
   },
   getCart: function(){
-    return _cartItens
+    return _cartItems;
   },
   getCatalog: function(){
-    return _catalog
+    return _catalog;
   },
 
   dispatcherIndex: AppDispatcher.register(function(payload){

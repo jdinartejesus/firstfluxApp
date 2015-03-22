@@ -1,8 +1,7 @@
 var React = require('react'),
     AppActions = require('../actions/app-actions.js');
 
-var Decrease =
-  React.createClass({
+var Decrease = React.createClass({
     handleClick: function(){
       AppActions.decreaseItem(this.props.index);
     },
