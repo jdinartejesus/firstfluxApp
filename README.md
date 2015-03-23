@@ -1,6 +1,6 @@
 # firstfluxApp
 
-My first application using flux, its a tutorial using egghead.io examples.
+My first application using flux, its a tutorial using egghead.io examples. <br />
 https://egghead.io/series/react-flux-architecture
 
 It's a simple applications where you can add items to your cart and check the price.
@@ -9,8 +9,10 @@ It's a simple applications where you can add items to your cart and check the pr
 
 Install Node.js and then:
 
-$ git clone git@github.com:jdinartejesus/firstfluxApp.git
-$ cd firstfluxApp
-$ npm install
-$ gulp watch
-$ gulp webserver
+<code>
+  $ git clone git@github.com:jdinartejesus/firstfluxApp.git
+  $ cd firstfluxApp
+  $ npm install
+  $ gulp watch
+  $ gulp webserver
+</code>
