@@ -10,7 +10,7 @@ It's a simple applications where you can add items to your cart and check the pr
 Install Node.js and then:
 
 $ git clone git@github.com:jdinartejesus/firstfluxApp.git
-$ cd simple-flux-counter
+$ cd firstfluxApp
 $ npm install
 $ gulp watch
 $ gulp webserver
