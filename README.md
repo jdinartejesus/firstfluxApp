@@ -9,10 +9,10 @@ It's a simple applications where you can add items to your cart and check the pr
 
 Install Node.js and then:
 
-<code>
-  $ git clone git@github.com:jdinartejesus/firstfluxApp.git <br>
-  $ cd firstfluxApp <br>
-  $ npm install <br/>
-  $ gulp watch <br />
-  $ gulp webserver
-</code>
+```sh
+$ git clone git@github.com:jdinartejesus/firstfluxApp.git
+$ cd firstfluxApp
+$ npm install
+$ gulp watch
+$ gulp webserver
+```
