@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# firstfluxApp
-=======
+
 # firstfluxApp
 
 My first application using flux, its a tutorial using egghead.io examples. <br />
@@ -19,4 +17,3 @@ $ npm install
 $ gulp watch
 $ gulp webserver
 ```
->>>>>>> origin/hotfix-1.0.1
