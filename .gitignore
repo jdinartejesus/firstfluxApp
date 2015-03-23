@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -31,3 +32,38 @@ dist/
 
 # API Docs
 docs/api/
+=======
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tags
+.tmproj
+nbproject
+Thumbs.db
+tags
+
+# NPM packages folder.
+node_modules/
+
+# Brunch folder for temporary files.
+tmp/
+
+# Brunch output folder.
+dist/
+
+# API Docs
+docs/api/
+>>>>>>> origin/hotfix-1.0.1
